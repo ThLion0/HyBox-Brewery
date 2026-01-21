@@ -1,7 +1,7 @@
 {
   "Group": "HyBox",
   "Name": "Brewery",
-  "Version": "0.0.1",
+  "Version": "0.0.1.1",
   "Main": "com.thlion_.brewery.BreweryPlugin",
   "ServerVersion": "*",
   "Authors": [
