@@ -93,7 +93,7 @@ public class SoberUpSystem extends EntityTickingSystem<EntityStore> {
             drunkComponent.setElapsedTime(0.0F);
 
             drunkComponent.decreaseDrunk(this.soberUpPerTick);
-            this.updateDrunkEffects(store, ref, playerRefComponent, drunkComponent, false);
+            this.updateDrunkEffects(store, ref, null, drunkComponent, false);
         }
 
         drunkComponent.addEffectTime(deltaTime);
@@ -106,7 +106,7 @@ public class SoberUpSystem extends EntityTickingSystem<EntityStore> {
         if (playerSomnolence != null) {
             if (playerSomnolence.getSleepState() instanceof PlayerSleep.Slumber) {
                 drunkComponent.setDrunkLevel(0.0F);
-                this.updateDrunkEffects(store, ref, playerRefComponent, drunkComponent, false);
+                this.updateDrunkEffects(store, ref, null, drunkComponent, false);
                 this.removeShakeEffect(playerRefComponent);
             }
         }

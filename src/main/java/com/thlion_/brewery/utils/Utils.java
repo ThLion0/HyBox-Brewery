@@ -6,6 +6,7 @@ import com.hypixel.hytale.server.core.entity.effect.EffectControllerComponent;
 
 import javax.annotation.Nonnull;
 import java.lang.reflect.Field;
+import java.util.Map;
 
 public class Utils {
     private static final String[] effectIdList = new String[]{
@@ -55,7 +56,11 @@ public class Utils {
     }
 
     public static boolean isItemStackHasTag(@Nonnull Item item, @Nonnull String key, @Nonnull String tag) {
-        String[] tagTypeValues = item.getData().getRawTags().get(key);
+        Map<String, String[]> tags = item.getData().getRawTags();
+        if (tags.isEmpty()) return false;
+
+        String[] tagTypeValues = tags.get(key);
+        if (tagTypeValues == null) return false;
 
         for (String itemTag : tagTypeValues) {
             if (itemTag.equals(tag)) {

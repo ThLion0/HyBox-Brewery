@@ -22,13 +22,13 @@ import javax.annotation.Nonnull;
 
 @SuppressWarnings("unused")
 public class BreweryPlugin extends JavaPlugin {
+    public static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
+
     private static BreweryPlugin instance;
     private static Config<BreweryConfig> config;
 
     private ComponentType<EntityStore, DrunkComponent> drunkComponentType;
     private SoberUpSystem soberUpSystem;
-
-    public static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
 
     public BreweryPlugin(@Nonnull JavaPluginInit init) {
         super(init);
@@ -55,7 +55,7 @@ public class BreweryPlugin extends JavaPlugin {
         entityStoreRegistry.registerSystem(new OnDeathSystem());
         entityStoreRegistry.registerSystem(this.soberUpSystem);
 
-        // Prevents player to place mug with
+        // Prevents player to place mug with low durability
         entityStoreRegistry.registerSystem(new PlaceBlockSystem());
 
         // Registering interactions, used to get drunk after drink
