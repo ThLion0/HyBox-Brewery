@@ -28,6 +28,7 @@ public class DrunkComponent implements Component<EntityStore> {
 
     public DrunkComponent(@Nonnull DrunkComponent other) {
         this.drunkLevel = other.drunkLevel;
+        // Reset timers on copy to prevent desync during teleportation
         this.elapsedTime = 0.0F;
         this.effectTime = 0.0F;
     }
@@ -81,9 +82,11 @@ public class DrunkComponent implements Component<EntityStore> {
 
     static {
         CODEC = BuilderCodec.builder(DrunkComponent.class, DrunkComponent::new)
-            .append(new KeyedCodec<>("DrunkLevel", Codec.FLOAT), (state, o) -> state.drunkLevel = o, state -> state.drunkLevel)
-            .add()
-            .append(new KeyedCodec<>("EffectTime", Codec.FLOAT), (state, o) -> state.effectTime = o, state -> state.effectTime)
+            .append(
+                new KeyedCodec<>("DrunkLevel", Codec.FLOAT),
+                (state, o) -> state.drunkLevel = o,
+                DrunkComponent::getDrunkLevel
+            )
             .add()
             .build();
     }

@@ -55,15 +55,43 @@ public class Utils {
         return (String) f.get(entityEffect);
     }
 
+    public static boolean hasBreweryTag(@Nonnull Item item) {
+        Map<String, String[]> tags = item.getData().getRawTags();
+        if (tags.isEmpty()) {
+            return false;
+        }
+
+        // Check for any brewery-specific tag keys
+        return tags.containsKey("Type") &&
+            tags.get("Type") != null &&
+            hasBreweryTypeTag(tags.get("Type"));
+    }
+
+    /**
+     * Check if any tag value is brewery-related
+     */
+    private static boolean hasBreweryTypeTag(@Nonnull String[] tagValues) {
+        for (String tag : tagValues) {
+            if (tag != null && tag.startsWith("Brewery_")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static boolean isItemStackHasTag(@Nonnull Item item, @Nonnull String key, @Nonnull String tag) {
         Map<String, String[]> tags = item.getData().getRawTags();
-        if (tags.isEmpty()) return false;
+        if (!tags.containsKey(key)) {
+            return false;
+        }
 
         String[] tagTypeValues = tags.get(key);
-        if (tagTypeValues == null) return false;
+        if (tagTypeValues == null) {
+            return false;
+        }
 
         for (String itemTag : tagTypeValues) {
-            if (itemTag.equals(tag)) {
+            if (itemTag != null && itemTag.equals(tag)) {
                 return true;
             }
         }
