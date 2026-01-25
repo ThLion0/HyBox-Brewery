@@ -1,6 +1,5 @@
 package com.thlion_.brewery;
 
-import com.hypixel.hytale.component.ComponentRegistryProxy;
 import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
@@ -13,6 +12,7 @@ import com.thlion_.brewery.commands.BreweryDrunkCommand;
 import com.thlion_.brewery.components.DrunkComponent;
 import com.thlion_.brewery.config.BreweryConfig;
 import com.thlion_.brewery.events.BreweryPlayerReadyEvent;
+import com.thlion_.brewery.interactions.BlockRefillContainerInteraction;
 import com.thlion_.brewery.interactions.DrunkUpInteraction;
 import com.thlion_.brewery.systems.OnDeathSystem;
 import com.thlion_.brewery.systems.PlaceBlockSystem;
@@ -43,7 +43,8 @@ public class BreweryPlugin extends JavaPlugin {
 
         config.save();
 
-        ComponentRegistryProxy<EntityStore> entityStoreRegistry = this.getEntityStoreRegistry();
+        var entityStoreRegistry = this.getEntityStoreRegistry();
+        var interactionRegistry = this.getCodecRegistry(Interaction.CODEC);
 
         // Registering components, core of the mechanic
         this.drunkComponentType = entityStoreRegistry
@@ -59,8 +60,9 @@ public class BreweryPlugin extends JavaPlugin {
         entityStoreRegistry.registerSystem(new PlaceBlockSystem());
 
         // Registering interactions, used to get drunk after drink
-        this.getCodecRegistry(Interaction.CODEC)
-            .register("Brewery_Drunk_Up", DrunkUpInteraction.class, DrunkUpInteraction.CODEC);
+        interactionRegistry.register("Brewery_Drunk_Up", DrunkUpInteraction.class, DrunkUpInteraction.CODEC);
+
+        interactionRegistry.register("BlockRefillContainer", BlockRefillContainerInteraction.class, BlockRefillContainerInteraction.CODEC);
 
         // Registering events, used to add component
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, BreweryPlayerReadyEvent::handle);

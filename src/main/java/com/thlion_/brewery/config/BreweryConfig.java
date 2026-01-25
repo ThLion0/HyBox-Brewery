@@ -70,27 +70,65 @@ public class BreweryConfig {
         return this.drunkValues.getOrDefault(id, 0.0F);
     }
 
-    static {
-        KeyedCodec<Map<String, Float>> foodValuesCodec = new KeyedCodec<>("FoodValues", new MapCodec<>(Codec.FLOAT, HashMap::new));
+    public Map<String, Float> getDrunkValues() {
+        return this.drunkValues;
+    }
 
+    static {
         CODEC = BuilderCodec.builder(BreweryConfig.class, BreweryConfig::new)
-            .append(new KeyedCodec<>("SoberTickRate", Codec.FLOAT), (state, o) -> state.soberTickRate = o, state -> state.soberTickRate)
+            .append(
+                new KeyedCodec<>("SoberTickRate", Codec.FLOAT),
+                (config, o) -> config.soberTickRate = o,
+                BreweryConfig::getSoberTickRate
+            )
             .add()
-            .append(new KeyedCodec<>("SoberUpPerTick", Codec.FLOAT), (state, o) -> state.soberUpPerTick = o, state -> state.soberUpPerTick)
+            .append(
+                new KeyedCodec<>("SoberUpPerTick", Codec.FLOAT),
+                (config, o) -> config.soberUpPerTick = o,
+                BreweryConfig::getSoberUpPerTick
+            )
             .add()
-            .append(new KeyedCodec<>("CameraDrunkEffectMin", Codec.FLOAT), (state, o) -> state.cameraDrunkEffectMin = o, state -> state.cameraDrunkEffectMin)
+            .append(
+                new KeyedCodec<>("CameraDrunkEffectMin", Codec.FLOAT),
+                (config, o) -> config.cameraDrunkEffectMin = o,
+                BreweryConfig::getCameraDrunkEffectMin
+            )
             .add()
-            .append(new KeyedCodec<>("CameraDrunkEffectMax", Codec.FLOAT), (state, o) -> state.cameraDrunkEffectMax = o, state -> state.cameraDrunkEffectMax)
+            .append(
+                new KeyedCodec<>("CameraDrunkEffectMax", Codec.FLOAT),
+                (config, o) -> config.cameraDrunkEffectMax = o,
+                BreweryConfig::getCameraDrunkEffectMax
+            )
             .add()
-            .append(new KeyedCodec<>("DrunkRequiredTier1", Codec.FLOAT), (state, o) -> state.drunkRequiredTier1 = o, state -> state.drunkRequiredTier1)
+            .append(
+                new KeyedCodec<>("DrunkRequiredTier1", Codec.FLOAT),
+                (config, o) -> config.drunkRequiredTier1 = o,
+                BreweryConfig::getDrunkRequiredTier1
+            )
             .add()
-            .append(new KeyedCodec<>("DrunkRequiredTier2", Codec.FLOAT), (state, o) -> state.drunkRequiredTier2 = o, state -> state.drunkRequiredTier2)
+            .append(
+                new KeyedCodec<>("DrunkRequiredTier2", Codec.FLOAT),
+                (config, o) -> config.drunkRequiredTier2 = o,
+                BreweryConfig::getDrunkRequiredTier2
+            )
             .add()
-            .append(new KeyedCodec<>("DrunkRequiredTier3", Codec.FLOAT), (state, o) -> state.drunkRequiredTier3 = o, state -> state.drunkRequiredTier3)
+            .append(
+                new KeyedCodec<>("DrunkRequiredTier3", Codec.FLOAT),
+                (config, o) -> config.drunkRequiredTier3 = o,
+                BreweryConfig::getDrunkRequiredTier3
+            )
             .add()
-            .append(new KeyedCodec<>("DrunkRequiredTier4", Codec.FLOAT), (state, o) -> state.drunkRequiredTier4 = o, state -> state.drunkRequiredTier4)
+            .append(
+                new KeyedCodec<>("DrunkRequiredTier4", Codec.FLOAT),
+                (config, o) -> config.drunkRequiredTier4 = o,
+                BreweryConfig::getDrunkRequiredTier4
+            )
             .add()
-            .append(foodValuesCodec, (state, o) -> state.drunkValues = o, state -> state.drunkValues)
+            .append(
+                new KeyedCodec<>("FoodValues", new MapCodec<>(Codec.FLOAT, HashMap::new)),
+                (config, o) -> config.drunkValues = o,
+                BreweryConfig::getDrunkValues
+            )
             .add()
             .build();
     }

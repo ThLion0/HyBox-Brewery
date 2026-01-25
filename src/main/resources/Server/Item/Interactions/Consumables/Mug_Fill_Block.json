@@ -1,0 +1,14 @@
+{
+  "Type": "Simple",
+  "Next": {
+    "Type": "BlockRefillContainer",
+    "States": {
+      "Filled_Water": {
+        "AllowedBlocks": [
+          "Water_Barrel"
+        ]
+      }
+    },
+    "RunTime": 0.1
+  }
+}

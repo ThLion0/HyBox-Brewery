@@ -1,0 +1,95 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Water_Barrel.name",
+    "Description": "server.items.Water_Barrel.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Water_Barrel.png",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "Furniture_Tavern",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "Recipe": {
+    "TimeSeconds": 1.0,
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Hardwood",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "*Container_Bucket_State_Filled_Water",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Water_Barrel",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Container_Bucket",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Brewing_Bench",
+        "Categories": [
+          "Bench_Brewing_Bench_Equipment"
+        ]
+      }
+    ],
+    "OutputQuantity": 1
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Miscellaneous/Water_Barrel.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Miscellaneous/Water_Barrel.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Wood",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "HitboxType": "Water_Barrel",
+    "BlockParticleSetId": "Wood",
+    "Supporting": {
+      "Up": [
+        {}
+      ]
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#5b3222",
+    "BlockSoundSetId": "Wood"
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "Family": [
+      "Tavern"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "ItemLevel": 11,
+  "MaxStack": 100
+}
