@@ -1,9 +1,8 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Water_Barrel.name",
-    "Description": "server.items.Water_Barrel.description"
+    "Name": "server.items.Deco_Wall_Shield.name"
   },
-  "Icon": "Icons/ItemsGenerated/Water_Barrel.png",
+  "Icon": "Icons/ItemsGenerated/Deco_Wall_Shield.png",
   "Categories": [
     "Furniture.Furniture"
   ],
@@ -14,24 +13,18 @@
     "Secondary": "Block_Secondary"
   },
   "Recipe": {
-    "TimeSeconds": 1.0,
+    "TimeSeconds": 1.5,
     "Input": [
       {
         "ResourceTypeId": "Wood_Trunk",
-        "Quantity": 5
+        "Quantity": 4
       },
       {
-        "ItemId": "*Container_Bucket_State_Filled_Water",
-        "Quantity": 1
-      }
-    ],
-    "Output": [
-      {
-        "ItemId": "Water_Barrel",
+        "ItemId": "Weapon_Sword_Iron",
         "Quantity": 1
       },
       {
-        "ItemId": "Container_Bucket",
+        "ItemId": "Weapon_Sword_Iron",
         "Quantity": 1
       }
     ],
@@ -40,7 +33,7 @@
         "Type": "Crafting",
         "Id": "Bench_Brewing_Bench",
         "Categories": [
-          "Bench_Brewing_Bench_Equipment"
+          "Bench_Brewing_Bench_Deco"
         ]
       }
     ],
@@ -50,10 +43,10 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Miscellaneous/Water_Barrel.blockymodel",
+    "CustomModel": "Blocks/Miscellaneous/Wall_Shield.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Miscellaneous/Water_Barrel.png",
+        "Texture": "Blocks/Miscellaneous/Wall_Shield.png",
         "Weight": 1
       }
     ],
@@ -64,22 +57,24 @@
         "GatherType": "Woods"
       }
     },
-    "HitboxType": "Water_Barrel",
+    "HitboxType": "Wall_Shield",
+    "VariantRotation": "NESW",
     "BlockParticleSetId": "Wood",
-    "Supporting": {
-      "Up": [
-        {}
-      ]
-    },
-    "Support": {
-      "Down": [
-        {
-          "FaceType": "Full"
-        }
-      ]
-    },
     "ParticleColor": "#5b3222",
-    "BlockSoundSetId": "Wood"
+    "BlockSoundSetId": "Wood",
+    "CustomModelScale": 0.6
+  },
+  "IconProperties": {
+    "Scale": 0.63,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -14.4
+    ]
   },
   "Tags": {
     "Type": [
@@ -90,6 +85,6 @@
     ]
   },
   "ItemSoundSetId": "ISS_Blocks_Wood",
-  "ItemLevel": 11,
+  "ItemLevel": 20,
   "MaxStack": 100
 }

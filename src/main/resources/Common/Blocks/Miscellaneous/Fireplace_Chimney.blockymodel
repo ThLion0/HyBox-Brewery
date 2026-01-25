@@ -4,7 +4,7 @@
       "id": "1",
       "name": "bone",
       "position": {"x": 0, "y": 2, "z": 0},
-      "orientation": {"x": 0, "y": -1, "z": 0, "w": 0},
+      "orientation": {"x": 0, "y": 1, "z": 0, "w": 0},
       "shape": {
         "type": "box",
         "offset": {"x": 0, "y": 14, "z": 2.5},
@@ -25,7 +25,7 @@
             "angle": 0
           },
           "front": {
-            "offset": {"x": 0, "y": 95},
+            "offset": {"x": 1, "y": 95},
             "mirror": {"x": false, "y": false},
             "angle": 0
           },

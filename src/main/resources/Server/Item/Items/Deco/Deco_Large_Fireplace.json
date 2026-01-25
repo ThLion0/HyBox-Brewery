@@ -1,0 +1,153 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Deco_Large_Fireplace.name"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Lighting"
+  ],
+  "Set": "Furniture_Tavern",
+  "Icon": "Icons/ItemsGenerated/Deco_Large_Fireplace.png",
+  "IconProperties": {
+    "Scale": 0.315,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -3.83,
+      -14.33
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 1.5,
+    "Input": [
+      {
+        "ResourceTypeId": "Rock",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Brewing_Bench",
+        "Categories": [
+          "Bench_Brewing_Bench_Deco"
+        ]
+      }
+    ]
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Stone",
+    "CustomModel": "Blocks/Miscellaneous/Large_Fireplace.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Miscellaneous/Large_Fireplace_On.png",
+        "Weight": 1
+      }
+    ],
+    "DrawType": "Model",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "HitboxType": "Large_Fireplace",
+    "VariantRotation": "NESW",
+    "Light": {
+      "Color": "#dca",
+      "Radius": 0
+    },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "Supporting": {
+      "Up": [
+        {}
+      ]
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Particles": [
+      {
+        "SystemId": "Campfire_New_Cartoon",
+        "TargetNodeName": "Flame",
+        "Scale": 1.0,
+        "PositionOffset": {
+          "Y": -0.4,
+          "Z": -0.75
+        }
+      }
+    ],
+    "BlockSoundSetId": "Stone",
+    "Looping": true,
+    "AmbientSoundEventId": "SFX_Campfire_Default_Loop",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Off"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Off": {
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Miscellaneous/Large_Fireplace_Off.png",
+              "Weight": 1
+            }
+          ],
+          "Interactions": {
+            "Use": {
+              "Interactions": [
+                {
+                  "Type": "ChangeState",
+                  "Changes": {
+                    "Off": "default"
+                  }
+                }
+              ]
+            }
+          },
+          "InteractionHint": "server.interactionHints.turnon",
+          "Light": null,
+          "Particles": null,
+          "InteractionSoundEventId": "SFX_Torch_Off",
+          "AmbientSoundEventId": null
+        }
+      }
+    },
+    "ParticleColor": "#615d44",
+    "InteractionHint": "server.interactionHints.turnoff"
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Tavern"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "ItemLevel": 11
+}

@@ -103,104 +103,104 @@ public class BlockRefillContainerInteraction extends SimpleBlockInteraction {
                 ChunkUtil.chunkCoordinate(blockPosition.y),
                 ChunkUtil.chunkCoordinate(blockPosition.z)
             );
-            if (section != null) {
-                BlockSection blockSection = section.getStore().getComponent(section, BlockSection.getComponentType());
-                if (blockSection != null) {
-                    int blockId = blockSection.get(blockPosition.x, blockPosition.y, blockPosition.z);
-                    int[] allowedBlockIds = this.getAllowedBlockIds();
-                    if (allowedBlockIds != null && Arrays.binarySearch(allowedBlockIds, blockId) < 0) {
+            if (section == null) return;
+
+            BlockSection blockSection = section.getStore().getComponent(section, BlockSection.getComponentType());
+            if (blockSection == null) return;
+
+            int blockId = blockSection.get(blockPosition.x, blockPosition.y, blockPosition.z);
+            int[] allowedBlockIds = this.getAllowedBlockIds();
+            if (allowedBlockIds != null && Arrays.binarySearch(allowedBlockIds, blockId) < 0) {
+                state.state = InteractionState.Failed;
+                return;
+            }
+
+            String newState = this.getBlockToState().get(blockId);
+            if (newState == null) {
+                state.state = InteractionState.Failed;
+                return;
+            }
+
+            ItemStack current = context.getHeldItem();
+            assert current != null;
+
+            Item newItemAsset = current.getItem().getItemForState(newState);
+            if (newItemAsset == null) {
+                state.state = InteractionState.Failed;
+                return;
+            }
+
+            ItemContainer itemContainer = context.getHeldItemContainer();
+            assert itemContainer != null;
+
+            RefillState refillState = this.refillStateMap.get(newState);
+            if (newItemAsset.getId().equals(current.getItemId())) {
+                if (refillState != null) {
+                    double newDurability = MathUtil.maxValue(refillState.durability, current.getMaxDurability());
+                    if (newDurability <= current.getDurability()) {
                         state.state = InteractionState.Failed;
                         return;
                     }
 
-                    String newState = this.getBlockToState().get(blockId);
-                    if (newState == null) {
+                    ItemStack newItem = current.withIncreasedDurability(newDurability);
+                    ItemStackSlotTransaction transaction = itemContainer
+                        .setItemStackForSlot(context.getHeldItemSlot(), newItem);
+
+                    if (!transaction.succeeded()) {
+                        state.state = InteractionState.Failed;
+                        return;
+                    }
+                    context.setHeldItem(newItem);
+                }
+            } else {
+                ItemStackSlotTransaction removeEmptyTransaction = itemContainer
+                    .removeItemStackFromSlot(context.getHeldItemSlot(), current, 1);
+
+                if (!removeEmptyTransaction.succeeded()) {
+                    state.state = InteractionState.Failed;
+                    return;
+                }
+
+                ItemStack refilledContainer = new ItemStack(newItemAsset.getId(), 1);
+                if (refillState != null && refillState.durability >= 0.0D) {
+                    refilledContainer = refilledContainer.withDurability(refillState.durability);
+                }
+
+                if (current.getQuantity() == 1) {
+                    ItemStackSlotTransaction addFilledTransaction = context.getHeldItemContainer()
+                        .setItemStackForSlot(context.getHeldItemSlot(), refilledContainer);
+
+                    if (!addFilledTransaction.succeeded()) {
                         state.state = InteractionState.Failed;
                         return;
                     }
 
-                    ItemStack current = context.getHeldItem();
-                    assert current != null;
+                    context.setHeldItem(refilledContainer);
+                } else {
+                    SimpleItemContainer.addOrDropItemStack(
+                        commandBuffer,
+                        ref,
+                        livingEntity.getInventory().getCombinedHotbarFirst(),
+                        refilledContainer
+                    );
 
-                    Item newItemAsset = current.getItem().getItemForState(newState);
-                    if (newItemAsset == null) {
-                        state.state = InteractionState.Failed;
-                        return;
-                    }
+                    context.setHeldItem(context.getHeldItemContainer().getItemStack(context.getHeldItemSlot()));
+                }
+            }
 
-                    ItemContainer itemContainer = context.getHeldItemContainer();
-                    assert itemContainer != null;
+            if (refillState != null && refillState.getTransformBlock() != null) {
+                int transformedBlock = BlockType.getBlockIdOrUnknown(refillState.getTransformBlock(), "Unknown block %s", refillState.getTransformBlock());
+                boolean placed = blockSection.set(
+                    blockPosition.x,
+                    blockPosition.y,
+                    blockPosition.z,
+                    transformedBlock
+                );
 
-                    RefillState refillState = this.refillStateMap.get(newState);
-                    if (newItemAsset.getId().equals(current.getItemId())) {
-                        if (refillState != null) {
-                            double newDurability = MathUtil.maxValue(refillState.durability, current.getMaxDurability());
-                            if (newDurability <= current.getDurability()) {
-                                state.state = InteractionState.Failed;
-                                return;
-                            }
-
-                            ItemStack newItem = current.withIncreasedDurability(newDurability);
-                            ItemStackSlotTransaction transaction = itemContainer
-                                .setItemStackForSlot(context.getHeldItemSlot(), newItem);
-
-                            if (!transaction.succeeded()) {
-                                state.state = InteractionState.Failed;
-                                return;
-                            }
-                            context.setHeldItem(newItem);
-                        }
-                    } else {
-                        ItemStackSlotTransaction removeEmptyTransaction = itemContainer
-                            .removeItemStackFromSlot(context.getHeldItemSlot(), current, 1);
-
-                        if (!removeEmptyTransaction.succeeded()) {
-                            state.state = InteractionState.Failed;
-                            return;
-                        }
-
-                        ItemStack refilledContainer = new ItemStack(newItemAsset.getId(), 1);
-                        if (refillState != null && refillState.durability >= 0.0D) {
-                            refilledContainer = refilledContainer.withDurability(refillState.durability);
-                        }
-
-                        if (current.getQuantity() == 1) {
-                            ItemStackSlotTransaction addFilledTransaction = context.getHeldItemContainer()
-                                .setItemStackForSlot(context.getHeldItemSlot(), refilledContainer);
-
-                            if (!addFilledTransaction.succeeded()) {
-                                state.state = InteractionState.Failed;
-                                return;
-                            }
-
-                            context.setHeldItem(refilledContainer);
-                        } else {
-                            SimpleItemContainer.addOrDropItemStack(
-                                commandBuffer,
-                                ref,
-                                livingEntity.getInventory().getCombinedHotbarFirst(),
-                                refilledContainer
-                            );
-
-                            context.setHeldItem(context.getHeldItemContainer().getItemStack(context.getHeldItemSlot()));
-                        }
-                    }
-
-                    if (refillState != null && refillState.getTransformBlock() != null) {
-                        int transformedBlock = BlockType.getBlockIdOrUnknown(refillState.getTransformBlock(), "Unknown block %s", refillState.getTransformBlock());
-                        boolean placed = blockSection.set(
-                            blockPosition.x,
-                            blockPosition.y,
-                            blockPosition.z,
-                            transformedBlock
-                        );
-
-                        if (placed) {
-                            world.performBlockUpdate(blockPosition.x, blockPosition.y, blockPosition.z);
-                        } else {
-                            state.state = InteractionState.Failed;
-                        }
-                    }
+                if (placed) {
+                    world.performBlockUpdate(blockPosition.x, blockPosition.y, blockPosition.z);
+                } else {
+                    state.state = InteractionState.Failed;
                 }
             }
         }
