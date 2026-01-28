@@ -1,0 +1,118 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Furniture_Tavern_Bar_Table.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Tavern_Bar_Table.png",
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "Furniture_Tavern",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "Recipe": {
+    "TimeSeconds": 0.5,
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Hardwood",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Brewing_Bench",
+        "Categories": [
+          "Bench_Brewing_Bench_Deco"
+        ]
+      }
+    ],
+    "OutputQuantity": 3
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Miscellaneous/Bar_Table_v2.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Miscellaneous/Bar_Table_v2.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Wood",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Woods"
+      }
+    },
+    "VariantRotation": "NESW",
+    "BlockParticleSetId": "Wood",
+    "Supporting": {
+      "Up": [
+        {}
+      ]
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "ParticleColor": "#5b3222",
+    "BlockSoundSetId": "Wood",
+    "State": {
+      "Definitions": {
+        "Corner": {
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Miscellaneous/Bar_Table_v2.png",
+              "Weight": 1
+            }
+          ],
+          "CustomModel": "Blocks/Miscellaneous/Bar_Table_v2_Corner.blockymodel",
+          "Gathering": {
+            "Breaking": {
+              "GatherType": "Woods"
+            }
+          }
+        }
+      }
+    },
+    "ConnectedBlockRuleSet": {
+      "Type": "CustomTemplate",
+      "TemplateShapeAssetId": "WallConnectedBlockTemplate",
+      "TemplateShapeBlockPatterns": {
+        "Straight": "Furniture_Tavern_Bar_Table",
+        "Corner": "*Furniture_Tavern_Bar_Table_State_Definitions_Corner"
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.63,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -14.4
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Wood"
+    ],
+    "Family": [
+      "Tavern"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "ItemLevel": 8,
+  "MaxStack": 100
+}

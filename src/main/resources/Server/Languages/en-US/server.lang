@@ -9,6 +9,15 @@ items.Bench_Brewing_Keg.description = Used to brew an alcoholic beverages.\n\n<i
 items.Bench_Oven.name = Oven
 items.Bench_Oven.description = Cook basic meals.
 
+items.Herb_Drying_Rack.name = Herb Drying Rack
+items.Herb_Drying_Rack.description = Used to dry herbs and plants over time.\n\n<i>Turns fresh ingredients into dried ones for cooking and brewing.</i>
+
+items.Millstone.name = Millstone
+items.Millstone.description = Used to grind grain into flour.\n\n<i>A heavy medieval stone grinder.</i>
+
+items.Cooking_Cauldron.name = Cooking Cauldron
+items.Cooking_Cauldron.description = Used to cook soups and simple meals over heat.\n\n<i>A large cauldron for preparing food.</i>
+
 # === crops ===
 
 items.Plant_Crop_Hops.name = Hops
@@ -58,6 +67,46 @@ items.Furniture_Tavern_High_Bar_Stool.name = High Stool
 
 items.Water_Barrel.name = Water Barrel
 items.Water_Barrel.description = A simple wooden barrel filled with water.\nRight-click it with an empty mug to scoop up fresh water for brewing and cooking.
+
+# === food ===
+
+items.Egg_Food_Plate.name = Egg Food Plate  
+items.Egg_Food_Plate.description = Restores <color is="#ffffff">10%</color> health.\n\n<i>A plate with cooked eggs.</i>
+
+items.Empty_Food_Plate.name = Empty Food Plate  
+items.Empty_Food_Plate.description = Used for serving meals.\n\n<i>A clean, empty plate.</i>
+
+items.Sandwich.name = Sandwich  
+items.Sandwich.description = Restores <color is="#ffffff">10%</color> health.\n\n<i>Bread with a hearty filling.</i>
+
+items.Sausages_Food_Plate.name = Sausages Food Plate  
+items.Sausages_Food_Plate.description = Restores <color is="#ffffff">10%</color> health.\n\n<i>A plate of cooked sausages.</i>
+
+# === soups ===
+
+items.Borsch_Soup.name = Borsch Soup
+items.Borsch_Soup.description = <i>A hearty beet soup served hot.</i>
+
+items.Chicken_Soup.name = Chicken Soup
+items.Chicken_Soup.description = <i>A light chicken broth with meat.</i>
+
+items.Cheese_Soup.name = Cheese Soup
+items.Cheese_Soup.description = <i>A thick, creamy soup made with melted cheese.</i>
+
+items.Fish_Soup.name = Fish Soup
+items.Fish_Soup.description = <i>A clear fish soup cooked from fresh catch.</i>
+
+items.Mushroom_Soup.name = Mushroom Soup
+items.Mushroom_Soup.description = <i>A rustic soup made from forest mushrooms.</i>
+
+items.Pumpkin_Soup.name = Pumpkin Soup
+items.Pumpkin_Soup.description = <i>A smooth pumpkin soup with a mild, sweet taste.</i>
+
+items.Empty_Soup_Plate.name = Empty Soup Plate
+items.Empty_Soup_Plate.description = Can be filled with water from a barrel or other water sources.\n\n<i>A clean plate ready for soup.</i>
+
+items.Water_Soup_Plate.name = Water Soup Plate
+items.Water_Soup_Plate.description = Used as a base ingredient for simple recipes.\n\n<i>A soup plate filled with water.</i>
 
 # === mugs ===
 
