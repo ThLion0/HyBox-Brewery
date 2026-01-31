@@ -57,7 +57,7 @@
     "OutputQuantity": 2
   },
   "MaxStack": 100,
-  "ItemLevel": 14,
+  "ItemLevel": 20,
   "DropOnDeath": true,
   "Icon": "Icons/ItemsGenerated/Ingredient_Sugar.png"
 }

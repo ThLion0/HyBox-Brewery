@@ -1,0 +1,97 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Food_Sandwich.name",
+    "Description": "server.items.Food_Sandwich.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T2"
+  },
+  "Quality": "Rare",
+  "Icon": "Icons/ItemsGenerated/Food_Sandwich.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Food/Food_Sandwich.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Food_Sandwich.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#e4cb69"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#e4cb69",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T3"
+        },
+        "HealthRegen_TierCheck_T3",
+        "FruitVeggie_TierCheck_T3"
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 3,
+    "Input": [
+      {
+        "ItemId": "Food_Bread",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Tomato_Item",
+        "Quantity": 1
+      },
+      {
+        "ResourceTypeId": "Meats",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Food_Cheese",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Plant_Crop_Lettuce_Item",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Food_Sandwich",
+        "Quantity": 6
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Prepared"
+        ]
+      }
+    ],
+    "OutputQuantity": 6
+  },
+  "ItemLevel": 10,
+  "MaxStack": 25,
+  "DropOnDeath": true
+}

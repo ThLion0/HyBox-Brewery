@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Attachment",
-      "position": {"x": 0.28151, "y": 2.48489, "z": 0.03203},
+      "position": {"x": 0.61484, "y": -4, "z": 0.36536},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,11 +22,11 @@
         {
           "id": "2",
           "name": "Plate",
-          "position": {"x": -0.28151, "y": 1.52459, "z": -0.03203},
+          "position": {"x": -0.61484, "y": 2.00948, "z": -0.36536},
           "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": -3.50948, "z": 0},
+            "offset": {"x": 0, "y": 2.49052, "z": 0},
             "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
               "isPiece": false,
@@ -55,13 +55,13 @@
               },
               "top": {
                 "offset": {"x": 25, "y": 0},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               },
               "bottom": {
                 "offset": {"x": 25, "y": 0},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               }
             },
             "unwrapMode": "custom",
@@ -73,11 +73,11 @@
             {
               "id": "3",
               "name": "Plate--C1",
-              "position": {"x": 0, "y": 2.50948, "z": 0},
+              "position": {"x": 0, "y": -3.49052, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": -0.50948, "z": 12},
+                "offset": {"x": 0, "y": 5.49052, "z": 12},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -120,11 +120,11 @@
             {
               "id": "4",
               "name": "Plate--C2",
-              "position": {"x": 0, "y": 2.50948, "z": -24},
+              "position": {"x": 0, "y": -3.49052, "z": -24},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": -0.50948, "z": 12},
+                "offset": {"x": 0, "y": 5.49052, "z": 12},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -167,11 +167,11 @@
             {
               "id": "5",
               "name": "Plate--C3",
-              "position": {"x": 0, "y": 2.50948, "z": -23},
+              "position": {"x": 0, "y": -3.49052, "z": -23},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": -12, "y": -0.50948, "z": 23},
+                "offset": {"x": -12, "y": 5.49052, "z": 23},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -191,8 +191,8 @@
                   },
                   "top": {
                     "offset": {"x": 1, "y": 28},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 270
+                    "mirror": {"x": true, "y": true},
+                    "angle": 90
                   }
                 },
                 "unwrapMode": "custom",
@@ -204,11 +204,11 @@
             {
               "id": "6",
               "name": "Plate--C4",
-              "position": {"x": 24, "y": 2.50948, "z": -23},
+              "position": {"x": 24, "y": -3.49052, "z": -23},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": -12, "y": -0.50948, "z": 23},
+                "offset": {"x": -12, "y": 5.49052, "z": 23},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -228,8 +228,8 @@
                   },
                   "top": {
                     "offset": {"x": 1, "y": 28},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 270
+                    "mirror": {"x": true, "y": true},
+                    "angle": 90
                   }
                 },
                 "unwrapMode": "custom",
@@ -243,11 +243,11 @@
         {
           "id": "7",
           "name": "Egg2",
-          "position": {"x": 4.25685, "y": -0.4147, "z": 3.1744},
-          "orientation": {"x": 0.03855, "y": 0.89346, "z": 0.07817, "w": -0.44061},
+          "position": {"x": 4.92352, "y": 1.22019, "z": 3.84107},
+          "orientation": {"x": -0.02893, "y": 0.89495, "z": -0.05866, "w": -0.44134},
           "shape": {
             "type": "box",
-            "offset": {"x": 0.1, "y": 1.125, "z": -0.125},
+            "offset": {"x": 0.1, "y": 7.125, "z": -0.125},
             "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
               "isPiece": false,
@@ -289,11 +289,11 @@
             {
               "id": "8",
               "name": "cube--C1",
-              "position": {"x": 0, "y": -2.5, "z": 0},
+              "position": {"x": 0, "y": -8.5, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 1, "z": 0},
+                "offset": {"x": 0, "y": 7, "z": 0},
                 "stretch": {"x": 1, "y": 1.01, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -336,11 +336,11 @@
             {
               "id": "9",
               "name": "cube--C2",
-              "position": {"x": -5.9, "y": -2.5, "z": 2.25},
+              "position": {"x": -5.9, "y": -8.5, "z": 2.25},
               "orientation": {"x": 0, "y": 0.13053, "z": 0, "w": 0.99144},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0.5, "y": 0, "z": 0.25},
+                "offset": {"x": 0.5, "y": 6, "z": 0.25},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -372,11 +372,6 @@
                     "offset": {"x": 27, "y": 9},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
-                  },
-                  "bottom": {
-                    "offset": {"x": 27, "y": 9},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
                   }
                 },
                 "unwrapMode": "custom",
@@ -388,11 +383,11 @@
             {
               "id": "10",
               "name": "cube--C3",
-              "position": {"x": 8, "y": -2.5, "z": -3.75},
+              "position": {"x": 8, "y": -8.5, "z": -3.75},
               "orientation": {"x": 0, "y": 0.10887, "z": 0, "w": 0.99406},
               "shape": {
                 "type": "box",
-                "offset": {"x": -3.25, "y": 0, "z": 3},
+                "offset": {"x": -3.25, "y": 6, "z": 3},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -424,11 +419,6 @@
                     "offset": {"x": 31, "y": 15},
                     "mirror": {"x": false, "y": false},
                     "angle": 180
-                  },
-                  "bottom": {
-                    "offset": {"x": 28, "y": 9},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
                   }
                 },
                 "unwrapMode": "custom",
@@ -442,11 +432,11 @@
         {
           "id": "11",
           "name": "Egg",
-          "position": {"x": -3.97534, "y": -1.10989, "z": -3.14237},
+          "position": {"x": -4.30867, "y": -0.625, "z": -3.4757},
           "orientation": {"x": 0, "y": 0.15212, "z": 0, "w": 0.98836},
           "shape": {
             "type": "box",
-            "offset": {"x": -0.00332, "y": 1.13639, "z": -0.20428},
+            "offset": {"x": -0.00332, "y": 7.13639, "z": -0.20428},
             "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
               "isPiece": false,
@@ -488,11 +478,11 @@
             {
               "id": "12",
               "name": "cube--C1",
-              "position": {"x": 0, "y": -2.5, "z": 0},
+              "position": {"x": 0, "y": -8.5, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 1, "z": 0},
+                "offset": {"x": 0, "y": 7, "z": 0},
                 "stretch": {"x": 1, "y": 1.01, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -535,11 +525,11 @@
             {
               "id": "13",
               "name": "cube--C2",
-              "position": {"x": -2.4, "y": -2.5, "z": 2.25},
+              "position": {"x": -2.4, "y": -8.5, "z": 2.25},
               "orientation": {"x": 0, "y": 0.27983, "z": 0, "w": 0.96005},
               "shape": {
                 "type": "box",
-                "offset": {"x": -2.5, "y": 1, "z": -0.25},
+                "offset": {"x": -2.5, "y": 7, "z": -0.25},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -582,11 +572,11 @@
             {
               "id": "14",
               "name": "cube--C3",
-              "position": {"x": 5.5, "y": -1.5, "z": -2.75},
+              "position": {"x": 5.5, "y": -7.5, "z": -2.75},
               "orientation": {"x": 0, "y": 0.15212, "z": 0, "w": 0.98836},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 0, "z": 0},
+                "offset": {"x": 0, "y": 6, "z": 0},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,

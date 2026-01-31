@@ -1,0 +1,60 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bowl_Soup_Cheese.name",
+    "Description": "server.items.Bowl_Soup_Cheese.description"
+  },
+  "Parent": "Template_Soup_Bowl",
+  "Icon": "Icons/ItemsGenerated/Bowl_Soup_Cheese.png",
+  "Categories": [
+    "Items.Foods"
+  ],
+  "Quality": "Uncommon",
+  "Recipe": {
+    "TimeSeconds": 3,
+    "Input": [
+      {
+        "ItemId": "*Container_Bowl_State_Filled_Water",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Food_Cheese",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Cooking_Cauldron",
+        "Categories": [
+          "Bench_Cauldron_Main"
+        ]
+      }
+    ]
+  },
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Drink"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T2"
+        },
+        "HealthRegen_TierCheck_T2",
+        "FruitVeggie_TierCheck_T2"
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Soup/Bowl_Soup_Cheese.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Soup/Bowl_Soup_Cheese.png",
+        "Weight": 1
+      }
+    ]
+  }
+}

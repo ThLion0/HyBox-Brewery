@@ -1,0 +1,80 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Food_Plate.name",
+    "Description": "server.items.Food_Plate.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Food_Plate.png",
+  "Categories": [
+    "Blocks.Deco"
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Wood_Planks",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Stick",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Brewing_Bench",
+        "Categories": [
+          "Bench_Brewing_Bench_Equipment"
+        ]
+      }
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "Consumable": false,
+  "Utility": {
+    "Compatible": true
+  },
+  "BlockType": {
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Consumables/Food/Food_Plate_Empty.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Consumables/Food/Food_Plate_Empty.png"
+      }
+    ],
+    "CustomModelScale": 0.6,
+    "HitboxType": "Food_Medium",
+    "Flags": {
+      "IsStackable": false
+    },
+    "RandomRotation": "YawStep1",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "BlockSoundSetId": "Wood"
+  },
+  "Scale": 1.43,
+  "IconProperties": {
+    "Scale": 0.688,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -10.0
+    ]
+  },
+  "PlayerAnimationsId": "Item",
+  "ItemLevel": 12,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

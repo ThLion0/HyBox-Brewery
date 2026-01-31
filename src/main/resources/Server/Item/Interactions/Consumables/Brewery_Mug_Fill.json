@@ -1,9 +1,13 @@
 {
   "Type": "Simple",
   "Next": {
-    "Type": "BlockRefillContainer",
+    "Type": "Brewery_RefillContainer",
     "States": {
       "Filled_Water": {
+        "AllowedFluids": [
+          "Water_Source",
+          "Water"
+        ],
         "AllowedBlocks": [
           "Water_Barrel"
         ]

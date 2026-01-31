@@ -1,0 +1,121 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Template_Soup_Bowl.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Container_Bowl.png",
+  "Categories": [
+    "Items.Foods"
+  ],
+  "Quality": "Template",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Drink"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Health_Restore_Small"
+        }
+      ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_Health_Potion_Low_Drink"
+          }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": {
+            "LocalSoundEventId": "SFX_WATER_MoveOut"
+          }
+        }
+      ]
+    },
+    "DurabilityModify": {
+      "Interactions": [
+        {
+          "Type": "ModifyInventory",
+          "AdjustHeldItemDurability": -1,
+          "BrokenItem": "Container_Bowl"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 1,
+  "MaxStack": 1,
+  "Consumable": true,
+  "Utility": {
+    "Compatible": true
+  },
+  "DropOnDeath": true,
+  "BlockType": {
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Consumables/Soup/Bowl_Empty.blockymodel",
+    "CustomModelScale": 0.65,
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Items/Consumables/Soup/Bowl_Empty.png"
+      }
+    ],
+    "HitboxType": "Plant_Small",
+    "Flags": {
+      "IsStackable": false
+    },
+    "RandomRotation": "YawStep1",
+    "BlockSoundSetId": "Wood",
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#64431E",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    },
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "PlayerAnimationsId": {
+    "Parent": "Item",
+    "Animations": {
+      "Consume": {
+        "FirstPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Drink/Drink_FPS.blockyanim",
+        "ThirdPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Drink/Drink.blockyanim",
+        "Speed": 1,
+        "Looping": true
+      }
+    }
+  },
+  "Scale": 1.43,
+  "Tags": {
+    "Type": [
+      "Consumable",
+      "Brewery_Drink"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.688,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -10.0
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

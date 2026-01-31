@@ -62,6 +62,11 @@
           "Name": "Equipment"
         },
         {
+          "Id": "Bench_Brewing_Bench_Crafting",
+          "Icon": "Icons/CraftingCategories/Bench_Brewing_Bench/Crafting.png",
+          "Name": "Crafting"
+        },
+        {
           "Id": "Bench_Brewing_Bench_Deco",
           "Icon": "Icons/CraftingCategories/Bench_Brewing_Bench/Deco.png",
           "Name": "Decorative"
@@ -107,5 +112,6 @@
     ]
   },
   "MaxStack": 1,
+  "ItemLevel": 10,
   "ItemSoundSetId": "ISS_Blocks_Wood"
 }

@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Tavern_Bar_Table.name"
+    "Name": "server.items.Furniture_Tavern_Bar_Table.name",
+    "Description": "server.items.Furniture_Tavern_Bar_Table.description"
   },
   "Icon": "Icons/ItemsGenerated/Furniture_Tavern_Bar_Table.png",
   "Categories": [
@@ -16,7 +17,7 @@
     "TimeSeconds": 0.5,
     "Input": [
       {
-        "ResourceTypeId": "Wood_Hardwood",
+        "ResourceTypeId": "Wood_Planks",
         "Quantity": 5
       }
     ],
@@ -104,6 +105,14 @@
       -14.4
     ]
   },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
   "Tags": {
     "Type": [
       "Wood"

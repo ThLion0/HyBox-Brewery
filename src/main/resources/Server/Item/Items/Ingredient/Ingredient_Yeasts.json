@@ -39,7 +39,6 @@
     ]
   },
   "Recipe": {
-    "TimeSeconds": 1.5,
     "Input": [
       {
         "ItemId": "*Deco_Mug_State_Filled_Water",
@@ -66,7 +65,7 @@
     "OutputQuantity": 3
   },
   "MaxStack": 100,
-  "ItemLevel": 16,
+  "ItemLevel": 21,
   "DropOnDeath": true,
   "Icon": "Icons/ItemsGenerated/Ingredient_Yeasts.png"
 }

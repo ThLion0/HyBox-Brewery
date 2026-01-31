@@ -7,7 +7,7 @@
         "Item": {
           "ItemId": "Plant_Crop_Beet_Item",
           "QuantityMin": 1,
-          "QuantityMax": 2
+          "QuantityMax": 1
         }
       },
       {

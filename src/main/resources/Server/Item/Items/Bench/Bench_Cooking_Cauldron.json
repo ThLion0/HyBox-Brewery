@@ -1,0 +1,94 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_Cooking_Cauldron.name",
+    "Description": "server.items.Bench_Cooking_Cauldron.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Bench_Cooking_Cauldron.png",
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "Set": "Furniture_Tavern",
+  "Recipe": {
+    "TimeSeconds": 3,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 6
+      },
+      {
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Brewing_Bench",
+        "Categories": [
+          "Bench_Brewing_Bench_Crafting"
+        ]
+      }
+    ]
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Benches/CookingCauldron.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Benches/CookingCauldron.png",
+        "Weight": 1
+      }
+    ],
+    "Bench": {
+      "Type": "Crafting",
+      "Id": "Bench_Cooking_Cauldron",
+      "LocalOpenSoundEventId": "SFX_Campfire_Open_Local",
+      "LocalCloseSoundEventId": "SFX_Campfire_Close_Local",
+      "CompletedSoundEventId": "SFX_Alchemy_Bench_Craft",
+      "Categories": [
+        {
+          "Id": "Bench_Cauldron_Main",
+          "Icon": "Icons/CraftingCategories/Bench_Brewing_Bench/Main.png",
+          "Name": "Main"
+        }
+      ],
+      "TierLevels": []
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {}
+    },
+    "VariantRotation": "NESW",
+    "Flags": {
+      "IsUsable": true
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "HitboxType": "Bench_Cooking_Cauldron",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "Looping": true,
+    "BlockSoundSetId": "Metal",
+    "BlockParticleSetId": "Metal",
+    "ParticleColor": "#636261"
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemLevel": 12,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

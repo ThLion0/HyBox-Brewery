@@ -6,7 +6,7 @@
     "DefaultValue": {
       "Interactions": [
         "Mug_Fill",
-        "Mug_Fill_Block"
+        "Brewery_Mug_Fill"
       ]
     },
     "Var": "Fill"

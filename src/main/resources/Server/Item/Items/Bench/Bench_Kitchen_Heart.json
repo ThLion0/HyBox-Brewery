@@ -1,57 +1,23 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Bench_Oven.name",
-    "Description": "server.items.Bench_Oven.description"
+    "Name": "server.items.Bench_Kitchen_Heart.name",
+    "Description": "server.items.Bench_Kitchen_Heart.description"
   },
+  "Quality": "Developer",
   "Categories": [
     "Furniture.Benches",
     "Blocks.Deco"
   ],
-  "Recipe": {
-    "Input": [
-      {
-        "ResourceTypeId": "Wood_Trunk",
-        "Quantity": 3
-      },
-      {
-        "ResourceTypeId": "Rock",
-        "Quantity": 3
-      }
-    ],
-    "Output": [
-      {
-        "ItemId": "Bench_Oven",
-        "Metadata": {
-          "BlockState": {
-            "Type": "processingBench",
-            "FuelContainer": {
-              "Capacity": 2
-            }
-          }
-        }
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Id": "Bench_Brewing_Bench",
-        "Categories": [
-          "Bench_Brewing_Bench_Crafting"
-        ]
-      }
-    ],
-    "TimeSeconds": 2
-  },
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",
     "ParticleColor": "#615d44",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Benches/Oven.blockymodel",
+    "CustomModel": "Blocks/Benches/Kitchen_Heart.blockymodel",
     "CustomModelTexture": [
       {
         "Weight": 1,
-        "Texture": "Blocks/Benches/Oven_Off.png"
+        "Texture": "Blocks/Benches/Kitchen_Heart_Off.png"
       }
     ],
     "CustomModelScale": 1,
@@ -62,6 +28,12 @@
       "Type": "Processing",
       "AllowNoInputProcessing": true,
       "Input": [
+        {
+          "FilterValidIngredients": true
+        },
+        {
+          "FilterValidIngredients": true
+        },
         {
           "FilterValidIngredients": true
         },
@@ -100,7 +72,7 @@
           }
         ]
       },
-      "OutputSlotsCount": 4,
+      "OutputSlotsCount": 6,
       "Id": "Campfire",
       "LocalOpenSoundEventId": "SFX_Furnace_Bench_Open",
       "LocalCloseSoundEventId": "SFX_Furnace_Bench_Close",
@@ -118,11 +90,11 @@
           "Light": {
             "Color": "#ecb"
           },
-          "CustomModel": "Blocks/Benches/Oven.blockymodel",
+          "CustomModel": "Blocks/Benches/Kitchen_Heart.blockymodel",
           "CustomModelTexture": [
             {
               "Weight": 1,
-              "Texture": "Blocks/Benches/Oven_On.png"
+              "Texture": "Blocks/Benches/Kitchen_Heart_On.png"
             }
           ],
           "AmbientSoundEventId": "SFX_Furnace_Bench_Processing",
@@ -141,11 +113,11 @@
           "Light": {
             "Color": "#ecb"
           },
-          "CustomModel": "Blocks/Benches/Oven.blockymodel",
+          "CustomModel": "Blocks/Benches/Kitchen_Heart.blockymodel",
           "CustomModelTexture": [
             {
               "Weight": 1,
-              "Texture": "Blocks/Benches/Oven_On.png"
+              "Texture": "Blocks/Benches/Kitchen_Heart_On.png"
             }
           ],
           "Looping": true,

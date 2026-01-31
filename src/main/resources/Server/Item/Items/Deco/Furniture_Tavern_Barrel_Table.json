@@ -14,7 +14,7 @@
   "Recipe": {
     "Input": [
       {
-        "ResourceTypeId": "Wood_Hardwood",
+        "ResourceTypeId": "Wood_Planks",
         "Quantity": 4
       },
       {

@@ -12,7 +12,7 @@ import com.thlion_.brewery.commands.BreweryDrunkCommand;
 import com.thlion_.brewery.components.DrunkComponent;
 import com.thlion_.brewery.config.BreweryConfig;
 import com.thlion_.brewery.events.BreweryPlayerReadyEvent;
-import com.thlion_.brewery.interactions.BlockRefillContainerInteraction;
+import com.thlion_.brewery.interactions.BreweryRefillContainerInteraction;
 import com.thlion_.brewery.interactions.DrunkUpInteraction;
 import com.thlion_.brewery.systems.OnDeathSystem;
 import com.thlion_.brewery.systems.PlaceBlockSystem;
@@ -62,7 +62,7 @@ public class BreweryPlugin extends JavaPlugin {
         // Registering interactions, used to get drunk after drink
         interactionRegistry.register("Brewery_Drunk_Up", DrunkUpInteraction.class, DrunkUpInteraction.CODEC);
 
-        interactionRegistry.register("BlockRefillContainer", BlockRefillContainerInteraction.class, BlockRefillContainerInteraction.CODEC);
+        interactionRegistry.register("Brewery_RefillContainer", BreweryRefillContainerInteraction.class, BreweryRefillContainerInteraction.CODEC);
 
         // Registering events, used to add component
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, BreweryPlayerReadyEvent::handle);

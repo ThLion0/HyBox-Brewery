@@ -26,7 +26,7 @@
         "Type": "Crafting",
         "Id": "Bench_Brewing_Bench",
         "Categories": [
-          "Bench_Brewing_Bench_Equipment"
+          "Bench_Brewing_Bench_Crafting"
         ]
       }
     ]
@@ -92,8 +92,8 @@
       "Bench"
     ]
   },
-  "MaxStack": 5,
-  "ItemLevel": 10,
+  "MaxStack": 1,
+  "ItemLevel": 11,
   "ItemSoundSetId": "ISS_Blocks_Wood",
   "IconProperties": {
     "Scale": 0.58823,

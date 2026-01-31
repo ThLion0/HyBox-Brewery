@@ -12,7 +12,7 @@
   "Recipe": {
     "Input": [
       {
-        "ResourceTypeId": "Wood_Hardwood",
+        "ResourceTypeId": "Wood_Planks",
         "Quantity": 1
       },
       {
@@ -72,6 +72,14 @@
       -7.2
     ]
   },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
   "Tags": {
     "Type": [
       "Deco"

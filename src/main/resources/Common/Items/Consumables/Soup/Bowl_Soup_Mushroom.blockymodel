@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Attachment",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 0, "y": -5, "z": 0},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,7 +22,7 @@
         {
           "id": "2",
           "name": "Plate",
-          "position": {"x": 0, "y": 4.009, "z": 0},
+          "position": {"x": 0, "y": 8.009, "z": 0},
           "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
           "shape": {
             "type": "box",
@@ -269,49 +269,17 @@
         },
         {
           "id": "8",
-          "name": "Mushroom3",
-          "position": {"x": 6.40996, "y": 9.3173, "z": -3.69397},
-          "orientation": {"x": 0.54489, "y": 0.27833, "z": 0.33283, "w": 0.71753},
+          "name": "Mushrooms",
+          "position": {"x": 0, "y": 14.50209, "z": 0},
+          "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
           "shape": {
-            "type": "box",
+            "type": "none",
             "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0.92677, "y": 1, "z": 1.11877},
+            "stretch": {"x": 0, "y": 0, "z": 0},
             "settings": {
-              "isPiece": false,
-              "size": {"x": 9, "y": 3, "z": 7}
+              "isPiece": false
             },
-            "textureLayout": {
-              "back": {
-                "offset": {"x": 10, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "right": {
-                "offset": {"x": 11, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "front": {
-                "offset": {"x": 10, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "left": {
-                "offset": {"x": 12, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "top": {
-                "offset": {"x": 0, "y": 52},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "bottom": {
-                "offset": {"x": 10, "y": 52},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              }
-            },
+            "textureLayout": {},
             "unwrapMode": "custom",
             "visible": true,
             "doubleSided": false,
@@ -320,46 +288,45 @@
           "children": [
             {
               "id": "9",
-              "name": "Node--C1",
-              "position": {"x": 0.33549, "y": 3.50758, "z": -0.02866},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "name": "Mushroom",
+              "position": {"x": -2.07547, "y": 0.67265, "z": 4.91364},
+              "orientation": {"x": -0.1674, "y": -0.88067, "z": 0.42436, "w": -0.12778},
               "shape": {
                 "type": "box",
                 "offset": {"x": 0, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "stretch": {"x": 0.79983, "y": 1, "z": 1.02055},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 3, "y": 4, "z": 3},
-                  "isStaticBox": true
+                  "size": {"x": 9, "y": 3, "z": 7}
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 10, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 11, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "front": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 10, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 12, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "top": {
-                    "offset": {"x": 34, "y": 52},
+                    "offset": {"x": 10, "y": 52},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "bottom": {
-                    "offset": {"x": 34, "y": 52},
+                    "offset": {"x": 0, "y": 52},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -368,97 +335,97 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
-              }
-            }
-          ]
-        },
-        {
-          "id": "10",
-          "name": "Mushroom2",
-          "position": {"x": -5.28065, "y": 11.01424, "z": -5.35954},
-          "orientation": {"x": 0.13162, "y": -0.08408, "z": 0.36042, "w": 0.91962},
-          "shape": {
-            "type": "box",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0.92677, "y": 1, "z": 1.11877},
-            "settings": {
-              "isPiece": false,
-              "size": {"x": 9, "y": 3, "z": 7}
+              },
+              "children": [
+                {
+                  "id": "10",
+                  "name": "Node",
+                  "position": {"x": 0.20904, "y": -3.37061, "z": 0.25516},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 3, "y": 5, "z": 3}
+                    },
+                    "textureLayout": {
+                      "back": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "right": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "front": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "left": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "bottom": {
+                        "offset": {"x": 34, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "flat"
+                  }
+                }
+              ]
             },
-            "textureLayout": {
-              "back": {
-                "offset": {"x": 10, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "right": {
-                "offset": {"x": 11, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "front": {
-                "offset": {"x": 10, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "left": {
-                "offset": {"x": 12, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "top": {
-                "offset": {"x": 20, "y": 52},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "bottom": {
-                "offset": {"x": 0, "y": 52},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              }
-            },
-            "unwrapMode": "custom",
-            "visible": true,
-            "doubleSided": false,
-            "shadingMode": "flat"
-          },
-          "children": [
             {
               "id": "11",
-              "name": "Node2",
-              "position": {"x": 0.02609, "y": -2.88936, "z": -0.06309},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "name": "Mushroom2",
+              "position": {"x": -5.28065, "y": 0.51215, "z": -5.35954},
+              "orientation": {"x": 0.13162, "y": -0.08408, "z": 0.36042, "w": 0.91962},
               "shape": {
                 "type": "box",
                 "offset": {"x": 0, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "stretch": {"x": 0.92677, "y": 1, "z": 1.11877},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 3, "y": 4, "z": 3}
+                  "size": {"x": 9, "y": 3, "z": 7}
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 10, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 11, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "front": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 10, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 12, "y": 60},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 20, "y": 52},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "bottom": {
-                    "offset": {"x": 34, "y": 52},
+                    "offset": {"x": 0, "y": 52},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -467,97 +434,97 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
-              }
-            }
-          ]
-        },
-        {
-          "id": "12",
-          "name": "Mushroom",
-          "position": {"x": -2.07547, "y": 11.17474, "z": 4.91364},
-          "orientation": {"x": -0.1674, "y": -0.88067, "z": 0.42436, "w": -0.12778},
-          "shape": {
-            "type": "box",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0.79983, "y": 1, "z": 1.02055},
-            "settings": {
-              "isPiece": false,
-              "size": {"x": 9, "y": 3, "z": 7}
+              },
+              "children": [
+                {
+                  "id": "12",
+                  "name": "Node2",
+                  "position": {"x": 0.02609, "y": -2.88936, "z": -0.06309},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 3, "y": 4, "z": 3}
+                    },
+                    "textureLayout": {
+                      "back": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "right": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "front": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "left": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "bottom": {
+                        "offset": {"x": 34, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "flat"
+                  }
+                }
+              ]
             },
-            "textureLayout": {
-              "back": {
-                "offset": {"x": 10, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "right": {
-                "offset": {"x": 11, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "front": {
-                "offset": {"x": 10, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "left": {
-                "offset": {"x": 12, "y": 60},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "top": {
-                "offset": {"x": 10, "y": 52},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "bottom": {
-                "offset": {"x": 0, "y": 52},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              }
-            },
-            "unwrapMode": "custom",
-            "visible": true,
-            "doubleSided": false,
-            "shadingMode": "flat"
-          },
-          "children": [
             {
               "id": "13",
-              "name": "Node",
-              "position": {"x": 0.20904, "y": -3.37061, "z": 0.25516},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "name": "Mushroom3",
+              "position": {"x": 6.40996, "y": -1.18479, "z": -3.69397},
+              "orientation": {"x": 0.54489, "y": 0.27833, "z": 0.33283, "w": 0.71753},
               "shape": {
                 "type": "box",
                 "offset": {"x": 0, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "stretch": {"x": 0.92677, "y": 1, "z": 1.11877},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 3, "y": 5, "z": 3}
+                  "size": {"x": 9, "y": 3, "z": 7}
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 10, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 11, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "front": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 10, "y": 60},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 30, "y": 52},
+                    "offset": {"x": 12, "y": 60},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 0, "y": 52},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "bottom": {
-                    "offset": {"x": 34, "y": 52},
+                    "offset": {"x": 10, "y": 52},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -566,7 +533,61 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
-              }
+              },
+              "children": [
+                {
+                  "id": "14",
+                  "name": "Node--C1",
+                  "position": {"x": 0.33549, "y": 3.50758, "z": -0.02866},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 3, "y": 4, "z": 3},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "back": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "right": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "front": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "left": {
+                        "offset": {"x": 30, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 34, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "bottom": {
+                        "offset": {"x": 34, "y": 52},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": false,
+                    "shadingMode": "flat"
+                  }
+                }
+              ]
             }
           ]
         }

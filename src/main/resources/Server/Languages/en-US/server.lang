@@ -6,6 +6,9 @@ items.Bench_Brewing_Bench.description = Used to craft brewing accessories.
 items.Bench_Brewing_Keg.name = Fermentation Barrel
 items.Bench_Brewing_Keg.description = Used to brew an alcoholic beverages.\n\n<i>A cozy sealed barrel where yeast throws a tiny party and turns your brew into beer, cider, and other tasty drinks over time.</i>
 
+items.Bench_Cooking_Cauldron.name = Cooking Cauldron
+items.Bench_Cooking_Cauldron.description = Used to cook soups and simple meals over heat.\n\n<i>A large cauldron for preparing food.</i>
+
 items.Bench_Oven.name = Oven
 items.Bench_Oven.description = Cook basic meals.
 
@@ -14,9 +17,6 @@ items.Herb_Drying_Rack.description = Used to dry herbs and plants over time.\n\n
 
 items.Millstone.name = Millstone
 items.Millstone.description = Used to grind grain into flour.\n\n<i>A heavy medieval stone grinder.</i>
-
-items.Cooking_Cauldron.name = Cooking Cauldron
-items.Cooking_Cauldron.description = Used to cook soups and simple meals over heat.\n\n<i>A large cauldron for preparing food.</i>
 
 # === crops ===
 
@@ -62,51 +62,55 @@ items.Deco_Fireplace_Chimney.name = Fireplace Chimney
 items.Deco_Fireplace_Headpiece.name = Fireplace Headpiece
 items.Deco_Wall_Shield.name = Wall Shield
 items.Furniture_Tavern_Bar_Table.name = Bar Table
+items.Furniture_Tavern_Bar_Table.description = A sturdy wooden bar table, perfect for serving drinks and meals.\n\n<i>Use a hammer to change table variations.</i>
+items.Furniture_Tavern_Bar_Table_Dark.name = Bar Table - Dark
+items.Furniture_Tavern_Bar_Table_Dark.description = Bar Table - A sturdy wooden bar table, perfect for serving drinks and meals.\n\n<i>Use a hammer to change table variations.</i>
 items.Furniture_Tavern_Barrel_Table.name = Barrel Table
 items.Furniture_Tavern_High_Bar_Stool.name = High Stool
+items.Furniture_Bar_Trapdoor.name = Bar Trapdoor
 
 items.Water_Barrel.name = Water Barrel
 items.Water_Barrel.description = A simple wooden barrel filled with water.\nRight-click it with an empty mug to scoop up fresh water for brewing and cooking.
 
 # === food ===
 
-items.Egg_Food_Plate.name = Egg Food Plate  
-items.Egg_Food_Plate.description = Restores <color is="#ffffff">10%</color> health.\n\n<i>A plate with cooked eggs.</i>
+items.Food_Plate.name = Wooden Food Plate
+items.Food_Plate.description = Used for serving meals.\n\n<i>A clean, empty plate.</i>
 
-items.Empty_Food_Plate.name = Empty Food Plate  
-items.Empty_Food_Plate.description = Used for serving meals.\n\n<i>A clean, empty plate.</i>
+items.Food_Plate_Egg.name = Egg Food Plate
+items.Food_Plate_Egg.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A plate with cooked eggs.</i>
 
-items.Sandwich.name = Sandwich  
-items.Sandwich.description = Restores <color is="#ffffff">10%</color> health.\n\n<i>Bread with a hearty filling.</i>
+items.Food_Plate_Sausages.name = Sausages Food Plate
+items.Food_Plate_Sausages.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A plate of cooked sausages.</i>
 
-items.Sausages_Food_Plate.name = Sausages Food Plate  
-items.Sausages_Food_Plate.description = Restores <color is="#ffffff">10%</color> health.\n\n<i>A plate of cooked sausages.</i>
+items.Food_Sandwich.name = Sandwich
+items.Food_Sandwich.description = [TMP] Instantly restores <color is="#ffffff">15%</color> health and grants:\n\n• <color is="#ffffff">Health Regen III</color>\n• <color is="#ffffff">Stamina Boost III</color>\n\nDuration: <color is="#ffffff">6:00</color>\n\n<i>Bread with a hearty filling.</i>
 
 # === soups ===
 
-items.Borsch_Soup.name = Borsch Soup
-items.Borsch_Soup.description = <i>A hearty beet soup served hot.</i>
+items.Container_Bowl.name = Wooden Bowl
+items.Container_Bowl.description = Can be filled with water from a barrel or other water sources.\n\n<i>A clean plate ready for soup.</i>
 
-items.Chicken_Soup.name = Chicken Soup
-items.Chicken_Soup.description = <i>A light chicken broth with meat.</i>
+items.Container_Bowl_Water.name = Wooden Bowl (Water)
+items.Container_Bowl_Water.description = Used as a base ingredient for simple recipes.\n\n<i>A soup plate filled with water.</i>
 
-items.Cheese_Soup.name = Cheese Soup
-items.Cheese_Soup.description = <i>A thick, creamy soup made with melted cheese.</i>
+items.Bowl_Soup_Borsch.name = Borsch Soup
+items.Bowl_Soup_Borsch.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A hearty beet soup served hot.</i>
 
-items.Fish_Soup.name = Fish Soup
-items.Fish_Soup.description = <i>A clear fish soup cooked from fresh catch.</i>
+items.Bowl_Soup_Cheese.name = Cheese Soup
+items.Bowl_Soup_Cheese.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A thick, creamy soup made with melted cheese.</i>
 
-items.Mushroom_Soup.name = Mushroom Soup
-items.Mushroom_Soup.description = <i>A rustic soup made from forest mushrooms.</i>
+items.Bowl_Soup_Chicken.name = Chicken Soup
+items.Bowl_Soup_Chicken.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A light chicken broth with meat.</i>
 
-items.Pumpkin_Soup.name = Pumpkin Soup
-items.Pumpkin_Soup.description = <i>A smooth pumpkin soup with a mild, sweet taste.</i>
+items.Bowl_Soup_Fish.name = Fish Soup
+items.Bowl_Soup_Fish.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A clear fish soup cooked from fresh catch.</i>
 
-items.Empty_Soup_Plate.name = Empty Soup Plate
-items.Empty_Soup_Plate.description = Can be filled with water from a barrel or other water sources.\n\n<i>A clean plate ready for soup.</i>
+items.Bowl_Soup_Mushroom.name = Mushroom Soup
+items.Bowl_Soup_Mushroom.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A rustic soup made from forest mushrooms.</i>
 
-items.Water_Soup_Plate.name = Water Soup Plate
-items.Water_Soup_Plate.description = Used as a base ingredient for simple recipes.\n\n<i>A soup plate filled with water.</i>
+items.Bowl_Soup_Pumpkin.name = Pumpkin Soup
+items.Bowl_Soup_Pumpkin.description = [TMP] Instantly restores <color is="#ffffff">10%</color> health and grants:\n\n• <color is="#ffffff">Health Regen II</color>\n• <color is="#ffffff">Stamina Boost II</color>\n\nDuration: <color is="#ffffff">2:30</color>\n\n<i>A smooth pumpkin soup with a mild, sweet taste.</i>
 
 # === mugs ===
 

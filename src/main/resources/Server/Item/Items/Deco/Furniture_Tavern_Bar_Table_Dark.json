@@ -1,8 +1,9 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Furniture_Tavern_Bar_Table.name"
+    "Name": "server.items.Furniture_Tavern_Bar_Table_Dark.name",
+    "Description": "server.items.Furniture_Tavern_Bar_Table_Dark.description"
   },
-  "Icon": "Icons/ItemsGenerated/Furniture_Tavern_Bar_Table.png",
+  "Icon": "Icons/ItemsGenerated/Furniture_Tavern_Bar_Table_Dark.png",
   "Categories": [
     "Furniture.Furniture"
   ],
@@ -12,33 +13,14 @@
     "Primary": "Block_Primary",
     "Secondary": "Block_Secondary"
   },
-  "Recipe": {
-    "TimeSeconds": 0.5,
-    "Input": [
-      {
-        "ResourceTypeId": "Wood_Hardwood",
-        "Quantity": 5
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Id": "Bench_Brewing_Bench",
-        "Categories": [
-          "Bench_Brewing_Bench_Deco"
-        ]
-      }
-    ],
-    "OutputQuantity": 3
-  },
   "BlockType": {
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Miscellaneous/Bar_Table_v2.blockymodel",
+    "CustomModel": "Blocks/Miscellaneous/Bar_Table_Dark.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Blocks/Miscellaneous/Bar_Table_v2.png",
+        "Texture": "Blocks/Miscellaneous/Bar_Table_Dark.png",
         "Weight": 1
       }
     ],
@@ -70,11 +52,11 @@
         "Corner": {
           "CustomModelTexture": [
             {
-              "Texture": "Blocks/Miscellaneous/Bar_Table_v2.png",
+              "Texture": "Blocks/Miscellaneous/Bar_Table_Dark.png",
               "Weight": 1
             }
           ],
-          "CustomModel": "Blocks/Miscellaneous/Bar_Table_v2_Corner.blockymodel",
+          "CustomModel": "Blocks/Miscellaneous/Bar_Table_Dark_Corner.blockymodel",
           "Gathering": {
             "Breaking": {
               "GatherType": "Woods"
@@ -87,8 +69,8 @@
       "Type": "CustomTemplate",
       "TemplateShapeAssetId": "WallConnectedBlockTemplate",
       "TemplateShapeBlockPatterns": {
-        "Straight": "Furniture_Tavern_Bar_Table",
-        "Corner": "*Furniture_Tavern_Bar_Table_State_Definitions_Corner"
+        "Straight": "Furniture_Tavern_Bar_Table_Dark",
+        "Corner": "*Furniture_Tavern_Bar_Table_Dark_State_Definitions_Corner"
       }
     }
   },
@@ -104,6 +86,14 @@
       -14.4
     ]
   },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
   "Tags": {
     "Type": [
       "Wood"

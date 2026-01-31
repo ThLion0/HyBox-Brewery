@@ -41,8 +41,8 @@
               },
               "right": {
                 "offset": {"x": 45, "y": 32},
-                "mirror": {"x": true, "y": true},
-                "angle": 90
+                "mirror": {"x": false, "y": false},
+                "angle": 270
               },
               "front": {
                 "offset": {"x": 26, "y": 31},
@@ -51,8 +51,8 @@
               },
               "left": {
                 "offset": {"x": 27, "y": 18},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               },
               "top": {
                 "offset": {"x": 26, "y": 18},
@@ -93,8 +93,8 @@
               },
               "right": {
                 "offset": {"x": 62, "y": 32},
-                "mirror": {"x": true, "y": true},
-                "angle": 90
+                "mirror": {"x": false, "y": false},
+                "angle": 270
               },
               "front": {
                 "offset": {"x": 48, "y": 31},
@@ -103,8 +103,8 @@
               },
               "left": {
                 "offset": {"x": 48, "y": 18},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               },
               "top": {
                 "offset": {"x": 48, "y": 18},
@@ -282,7 +282,7 @@
         {
           "id": "7",
           "name": "salad--C6",
-          "position": {"x": -3.5, "y": -0.6, "z": 1},
+          "position": {"x": -3.5, "y": -0.575, "z": 1},
           "orientation": {"x": 0, "y": 0.30071, "z": 0, "w": 0.95372},
           "shape": {
             "type": "box",

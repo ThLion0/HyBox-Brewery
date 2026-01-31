@@ -14,7 +14,7 @@
   "Recipe": {
     "Input": [
       {
-        "ResourceTypeId": "Wood_Hardwood",
+        "ResourceTypeId": "Wood_Planks",
         "Quantity": 1
       },
       {
@@ -73,9 +73,20 @@
       -5
     ]
   },
+  "ResourceTypes": [
+    {
+      "Id": "Fuel"
+    },
+    {
+      "Id": "Charcoal"
+    }
+  ],
   "Tags": {
     "Type": [
       "Deco"
+    ],
+    "Family": [
+      "Tavern"
     ]
   },
   "ItemSoundSetId": "ISS_Blocks_Wood",

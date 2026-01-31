@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "R-Attachment",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 0, "y": -6, "z": 0},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -26,7 +26,7 @@
           "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": 1.991, "z": 12},
+            "offset": {"x": 0, "y": 6.991, "z": 12},
             "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
               "isPiece": false,
@@ -68,11 +68,11 @@
             {
               "id": "3",
               "name": "Plate--C1",
-              "position": {"x": 0, "y": -1.991, "z": -36},
+              "position": {"x": 0, "y": -6.991, "z": -36},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": 1.991, "z": 12},
+                "offset": {"x": 0, "y": 6.991, "z": 12},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -115,11 +115,11 @@
             {
               "id": "4",
               "name": "Plate--C2",
-              "position": {"x": 0, "y": -1.991, "z": -36},
+              "position": {"x": 0, "y": -6.991, "z": -36},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": -12, "y": 1.991, "z": 24},
+                "offset": {"x": -12, "y": 6.991, "z": 24},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -152,11 +152,11 @@
             {
               "id": "5",
               "name": "Plate--C3",
-              "position": {"x": 24, "y": -1.991, "z": -36},
+              "position": {"x": 24, "y": -6.991, "z": -36},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": -12, "y": 1.991, "z": 24},
+                "offset": {"x": -12, "y": 6.991, "z": 24},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -189,11 +189,11 @@
             {
               "id": "6",
               "name": "Plate--C4",
-              "position": {"x": 0, "y": -1.991, "z": -12},
+              "position": {"x": 0, "y": -6.991, "z": -12},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": -3.509, "z": 0},
+                "offset": {"x": 0, "y": 1.491, "z": 0},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -241,11 +241,11 @@
             {
               "id": "7",
               "name": "Plate--C5",
-              "position": {"x": 0, "y": 6.009, "z": -12},
+              "position": {"x": 0, "y": 1.009, "z": -12},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": -3.509, "z": 0},
+                "offset": {"x": 0, "y": 1.491, "z": 0},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -257,6 +257,70 @@
                     "offset": {"x": 49, "y": 1},
                     "mirror": {"x": false, "y": false},
                     "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "8",
+              "name": "Plate--C6",
+              "position": {"x": -7, "y": 0.759, "z": -9.5},
+              "orientation": {"x": -0.00354, "y": -0.53897, "z": -0.05669, "w": 0.84041},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -7, "y": 1.991, "z": -3},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 7, "y": 0, "z": 9},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 26, "y": 34},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 0
+                  },
+                  "bottom": {
+                    "offset": {"x": 26, "y": 25},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "9",
+              "name": "Plate--C7",
+              "position": {"x": 5.75, "y": -1, "z": -6.75},
+              "orientation": {"x": -0.12941, "y": 0.83652, "z": -0.22414, "w": -0.48296},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 5, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 7, "y": 0, "z": 9},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 38, "y": 24},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "bottom": {
+                    "offset": {"x": 38, "y": 33},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 0
                   }
                 },
                 "unwrapMode": "custom",

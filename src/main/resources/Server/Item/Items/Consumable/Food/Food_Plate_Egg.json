@@ -1,0 +1,78 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Food_Plate_Egg.name",
+    "Description": "server.items.Food_Plate_Egg.description"
+  },
+  "Parent": "Template_Food_Plate",
+  "Icon": "Icons/ItemsGenerated/Food_Plate_Egg.png",
+  "Categories": [
+    "Items.Foods"
+  ],
+  "Quality": "Uncommon",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "ItemId": "Food_Plate_Item",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Food_Egg",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Prepared"
+        ]
+      }
+    ]
+  },
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Drink"
+  },
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Food_T1_Inner",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#FCF4D7",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T2"
+        },
+        "HealthRegen_TierCheck_T2",
+        "FruitVeggie_TierCheck_T2"
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Food/Food_Plate_Egg.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Food_Plate_Egg.png",
+        "Weight": 1
+      }
+    ]
+  },
+  "ItemLevel": 8
+}
